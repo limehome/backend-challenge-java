@@ -1,14 +1,14 @@
 package de.limehome.backendchallengejava;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -39,10 +39,10 @@ class BackendChallengeIntegrationTests {
     @InjectMocks
     private BookingController controller;
 
-    @MockBean
+    @MockitoBean
     private BookingRepository bookingRepository;
 
-    static ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
+    static ObjectMapper objectMapper = new ObjectMapper();
     @Test
     void createFreshBooking() throws Exception {
         Mockito.when(bookingRepository.save(Mockito.any(Booking.class))).then(i -> i.getArguments()[0]);

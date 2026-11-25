@@ -29,7 +29,7 @@ When implementing, make sure you follow known best practices around architecture
 
 Make sure to have the following installed
 
-- Java version 17 (make sure that your $JAVA_HOME env variable is set)
+- Java version 25 (make sure that your $JAVA_HOME env variable is set)
 
 ### Setup
 
@@ -46,9 +46,9 @@ To get started, clone the repository locally and run the following
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.0.6)
+ :: Spring Boot ::                (v4.2.0)
 
-2023-06-01T23:59:47.507+02:00  INFO 20967 --- [           main] d.l.b.BackendChallengeJavaApplication    : Starting BackendChallengeJavaApplication using Java 17.0.6 with PID 20967 (/backend-challenge-java/build/classes/java/main started by limehome in /backend-challenge-java)
+2023-06-01T23:59:47.507+02:00  INFO 20967 --- [           main] d.l.b.BackendChallengeJavaApplication    : Starting BackendChallengeJavaApplication using Java 25.0.5.1 with PID 20967 (/backend-challenge-java/build/classes/java/main started by limehome in /backend-challenge-java)
 2023-06-01T23:59:47.509+02:00  INFO 20967 --- [           main] d.l.b.BackendChallengeJavaApplication    : The following 1 profile is active: "default"
 2023-06-01T23:59:48.781+02:00  INFO 20967 --- [           main] d.l.b.BackendChallengeJavaApplication    : Started BackendChallengeJavaApplication in 1.412 seconds (process running for 1.576)
 <==========---> 80% EXECUTING [1s]
